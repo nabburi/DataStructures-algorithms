@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class SelectionSort {
 
 	public void sort(int[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Selection Sort");
 		for (int i = 0; i <= args.length -1; i++) {
 			int minIdx = i;

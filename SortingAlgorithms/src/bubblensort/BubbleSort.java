@@ -1,20 +1,22 @@
 package bubblensort;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class BubbleSort {
 
 	public void sort(int[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Bubble Sort");
-		for(int i = 0; i <= args.length -1; i++) {
-			//int minIdxi;
-			for(int j = 0; j <= args.length - 1; j++) {
-				if(args[i] > args[j]) {
-					int temp = args[j];
-					args[j] = args[i];
-					args[i] = temp;
+		for(int i = 0; i < args.length-1; i++) {
+			boolean swapp = false;
+			for(int j = 0; j < args.length -i - 1; j++) {
+				if(args[j] > args[j+1]) {
+					int temp = args[j+1];
+					args[j+1] = args[j];
+					args[j] = temp;
+					swapp = true;
 				}
+			}
+			if(!swapp) {
+				break;
 			}
 		}
 		for (int i : args) {
