@@ -21,9 +21,7 @@ public class HeapSort {
 			args[i] = temp;
 			
 			heapify(args, i, 0);
-		}
-		
-
+		}		
 	}
 
 	public void heapify(int[] args, int argsLength, int index) {
