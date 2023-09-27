@@ -32,7 +32,7 @@ public class SegregateEvenAndOddNumbers {
 		}
 
 	}
-//do with two pointers
+//do with two pointers from same end
 	private void sort(int[] arr) {
 		for (int i = 1; i < arr.length; i++) {
 			int key = arr[i];

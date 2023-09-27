@@ -1,8 +1,10 @@
 package practiceproblems;
 
-public class DutchNationalFlag {
+public class TowersOfHanoi {
 
 	public static void main(String[] args) {
-		//try with three way partitioning
+		// TODO Auto-generated method stub
+
 	}
+
 }

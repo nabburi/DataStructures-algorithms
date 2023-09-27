@@ -5,7 +5,7 @@ public class MergeOneSortedArrayIntoAnother {
 	public static void main(String[] args) {
 		int sarr[] = {1,5};
 		int barr[] = {2,3,4,6,0,0};
-		
+		//solve it with two ponters and not using aux space
 		int i=0;
 		int j=0;
 		int k = 0;

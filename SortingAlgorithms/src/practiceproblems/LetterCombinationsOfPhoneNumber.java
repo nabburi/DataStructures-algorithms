@@ -1,8 +1,9 @@
 package practiceproblems;
 
-public class DutchNationalFlag {
+public class LetterCombinationsOfPhoneNumber {
 
 	public static void main(String[] args) {
-		//try with three way partitioning
+
 	}
+
 }
