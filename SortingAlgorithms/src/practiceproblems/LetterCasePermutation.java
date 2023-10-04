@@ -7,14 +7,14 @@ import org.apache.commons.lang3.ArrayUtils;
 
 public class LetterCasePermutation {
 	
-	ArrayList<String> result = new ArrayList<String>();
+	static ArrayList<String> result = new ArrayList<String>();
 
 	public static void main(String[] args) {
-		String s = "a1b2";
+		String s = "abcd";
 		LetterCasePermutation lcp = new LetterCasePermutation();
 		char[] slate = new char[s.length()]; 
 		lcp.helper(s, 0, slate);
-
+		System.out.println(result);
 	}
 	
 	public void helper(String s, int i, char[] slate) {
