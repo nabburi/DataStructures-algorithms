@@ -1,7 +1,9 @@
 package practiceproblems;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 public class CombinationsSum {
 	public static void main(String[] args) {
@@ -10,6 +12,7 @@ public class CombinationsSum {
 		int[] s = { 1, 2, 3, 6, 7 };
 		helper(s, 0, 7, slate, result);
 		System.out.println(result);
+		Stack<String> se = new Stack<String>();
 	}
 
 	private static void helper(int[] s, int i, int target, List<Integer> slate, List<List<Integer>> result) {
@@ -22,7 +25,6 @@ public class CombinationsSum {
 		if ( i >= s.length || sum > target) {
 			return;
 		}
-
 		// exclude
 		helper(s, i + 1, target, slate, result);
 		// include
